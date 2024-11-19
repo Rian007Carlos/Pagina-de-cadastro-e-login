@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: rgb(49, 147, 152);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    background-color: white;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border-radius: 1em;
+    width: 30em;
+    max-width: 40em;
+    min-width: 30em;
+    box-shadow: -8px 0 0 rgba(0, 0, 0, 0.333);
+}
+
+.leg-cadastro {
+    color: var(--main-color);
+    font-size: 2em;
+    font-weight: 300;
+    padding: 1.4em 0 .1em 0;
+}
+
+.form-field {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+
+.form-label {
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-bottom: .3em;
+    display: inline-block;
+
+
+}
+
+.form-text {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom-color: var(--main-color);
+    padding: 1em;
+    margin: .4em auto;
+    transition-property: font-size;
+    transition-duration: .4s;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.form-text:focus {
+    font-size: 1em;
+    border: 1px solid var(--main-color);
+    border-radius: .5em;
+    box-shadow: 0 0 5px rgba(32, 129, 214, .5);
+    outline: 0;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.form-btn {
+    background-color: var(--main-color);
+    padding: .6em 1.2em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: .5em;
+    margin-right: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+}
+
+.form-btn:hover {
+    background-color: rgb(78, 182, 189);
+}
+
+.register {
+    margin-left: .6em;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.registred {
+    font-size: .85em;
+}
+
+.registred a {
+    color: var(--main-color);
+}
